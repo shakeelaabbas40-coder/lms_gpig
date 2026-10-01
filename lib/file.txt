@@ -1,0 +1,28 @@
+lib
+│   main.dart
+│
+├───models
+│       assignment_model.dart
+│       course_model.dart
+│       user_model.dart
+│
+├───screens
+│       assignments_screen.dart
+│       course_detail_screen.dart
+│       courses_screen.dart
+│       dashboard_screen.dart
+│       login_screen.dart
+│       profile_screen.dart
+│       quizzes_screen.dart
+│       results_screen.dart
+│       signup_screen.dart
+│       splash_screen.dart
+│
+├───services
+│       auth_service.dart
+│       course_service.dart
+│
+└───widgets
+        assignment_card.dart
+        course_card.dart
+        custom_button.dart now just give me code for each screen one by one do not brush do not edit short code
