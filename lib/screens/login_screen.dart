@@ -1,4 +1,4 @@
-gitimport 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'signup_screen.dart';
 
 class LoginScreen extends StatelessWidget {

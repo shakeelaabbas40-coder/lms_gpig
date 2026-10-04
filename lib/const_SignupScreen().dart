@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
-class ResultsScreen extends StatelessWidget {
-  const ResultsScreen({super.key});
+class SignupScreen extends StatelessWidget {
+  const SignupScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Results'),
+        title: const Text('LMS Signup'),
       ),
       body: const Center(
         child: Text(
-          'My Results',
+          'Signup Screen',
           style: TextStyle(fontSize: 24),
         ),
       ),
