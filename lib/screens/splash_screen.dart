@@ -71,7 +71,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
               ScaleTransition(
                 scale: _scaleAnimation,
                 child: FadeTransition(
-                  fade: _fadeAnimation,
+                  opacity: _fadeAnimation,
                   child: Container(
                     padding: const EdgeInsets.all(24),
                     decoration: BoxDecoration(
@@ -95,7 +95,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
               ),
               const SizedBox(height: 28),
               FadeTransition(
-                fade: _fadeAnimation,
+                opacity: _fadeAnimation,
                 child: Column(
                   children: [
                     const Text(
