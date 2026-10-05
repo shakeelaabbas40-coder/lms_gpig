@@ -113,22 +113,42 @@ class _LoginScreenState extends State<LoginScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // App Branding Header
+                  // GPI Gilgit Logo & Branding Header
                   Center(
                     child: Container(
-                      padding: const EdgeInsets.all(16),
+                      width: 100,
+                      height: 100,
                       decoration: BoxDecoration(
-                        color: primaryColor.withOpacity(0.1),
                         shape: BoxShape.circle,
+                        boxShadow: [
+                          BoxShadow(
+                            color: const Color(0xFF1E3A8A).withOpacity(0.18),
+                            blurRadius: 20,
+                            offset: const Offset(0, 6),
+                          ),
+                        ],
                       ),
-                      child: const Icon(
-                        Icons.school_rounded,
-                        size: 48,
-                        color: primaryColor,
+                      child: ClipOval(
+                        child: Image.asset(
+                          'assets/images/gpi_logo.png',
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                   ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 14),
+                  const Center(
+                    child: Text(
+                      'GPI GILGIT',
+                      style: TextStyle(
+                        fontSize: 13,
+                        fontWeight: FontWeight.w700,
+                        color: Color(0xFF1E3A8A),
+                        letterSpacing: 2.0,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 16),
                   const Center(
                     child: Text(
                       'Welcome Back!',

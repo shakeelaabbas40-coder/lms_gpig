@@ -3,6 +3,7 @@ import 'dashboard_screen.dart';
 import 'courses_screen.dart';
 import 'assignments_screen.dart';
 import 'quizzes_screen.dart';
+import 'teachers_screen.dart';
 import 'profile_screen.dart';
 
 class MainNavigationScreen extends StatefulWidget {
@@ -21,6 +22,7 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
     CoursesScreen(),
     AssignmentsScreen(),
     QuizzesScreen(),
+    TeachersScreen(),
     ProfileScreen(),
   ];
 
@@ -66,7 +68,8 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
                 _buildNavItem(1, Icons.menu_book_rounded, Icons.menu_book_outlined, 'Courses'),
                 _buildNavItem(2, Icons.assignment_rounded, Icons.assignment_outlined, 'Tasks'),
                 _buildNavItem(3, Icons.quiz_rounded, Icons.quiz_outlined, 'Quizzes'),
-                _buildNavItem(4, Icons.person_rounded, Icons.person_outline_rounded, 'Profile'),
+                _buildNavItem(4, Icons.people_alt_rounded, Icons.people_alt_outlined, 'Teachers'),
+                _buildNavItem(5, Icons.person_rounded, Icons.person_outline_rounded, 'Profile'),
               ],
             ),
           ),

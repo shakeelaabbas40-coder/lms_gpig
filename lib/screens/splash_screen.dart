@@ -73,22 +73,24 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                 child: FadeTransition(
                   opacity: _fadeAnimation,
                   child: Container(
-                    padding: const EdgeInsets.all(24),
+                    width: 140,
+                    height: 140,
                     decoration: BoxDecoration(
                       color: Colors.white,
                       shape: BoxShape.circle,
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.black.withOpacity(0.2),
+                          color: Colors.black.withOpacity(0.25),
                           blurRadius: 30,
                           offset: const Offset(0, 10),
                         ),
                       ],
                     ),
-                    child: const Icon(
-                      Icons.auto_stories_rounded,
-                      size: 64,
-                      color: primaryColor,
+                    child: ClipOval(
+                      child: Image.asset(
+                        'assets/images/gpi_logo.png',
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                 ),
@@ -99,12 +101,22 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                 child: Column(
                   children: [
                     const Text(
-                      'EDUCONNECT LMS',
+                      'GPI GILGIT LMS',
                       style: TextStyle(
-                        fontSize: 28,
+                        fontSize: 26,
                         fontWeight: FontWeight.w900,
                         letterSpacing: 2.0,
                         color: Colors.white,
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    const Text(
+                      'Govt. Polytechnic Institute',
+                      style: TextStyle(
+                        fontSize: 13,
+                        fontWeight: FontWeight.w600,
+                        color: Colors.white70,
+                        letterSpacing: 0.5,
                       ),
                     ),
                     const SizedBox(height: 8),
@@ -117,7 +129,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                       child: const Text(
                         'Empowering Your Academic Journey',
                         style: TextStyle(
-                          fontSize: 13,
+                          fontSize: 12,
                           fontWeight: FontWeight.w500,
                           color: Colors.white,
                           letterSpacing: 0.5,
