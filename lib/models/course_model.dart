@@ -4,7 +4,7 @@ class LessonModel {
   final String duration;
   final bool isCompleted;
   final bool isLocked;
-  final String type; // 'video', 'reading', 'assignment'
+  final String type; // 'video', 'reading',
 
   LessonModel({
     required this.id,
